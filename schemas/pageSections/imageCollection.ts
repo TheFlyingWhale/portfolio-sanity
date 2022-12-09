@@ -10,11 +10,17 @@ export default {
 			initialValue: false,
 		},
 		{
+			name: "fixedColumns",
+			title: "fixedColumns",
+			type: "number",
+			validation: (Rule) => Rule.max(6),
+		},
+		{
 			name: "imageCollection",
 			title: "Collection",
 			type: "array",
 			of: [{ type: "imageElement" }],
-			validation: (Rule) => Rule.min(2).max(6),
+			validation: (Rule) => Rule.min(2),
 		},
 	],
 };
