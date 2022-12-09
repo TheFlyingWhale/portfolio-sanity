@@ -1,7 +1,7 @@
 export default {
-	name: "imageElement",
+	name: "imageDocument",
 	title: "Image",
-	type: "object",
+	type: "document",
 	options: {
 		hotspot: true,
 	},
@@ -16,6 +16,14 @@ export default {
 			title: "Include title",
 			type: "boolean",
 			initialValue: false,
+		},
+		{
+			name: "slug",
+			title: "Image slug",
+			type: "slug",
+			options: {
+				source: "title",
+			},
 		},
 		{
 			name: "subtitle",

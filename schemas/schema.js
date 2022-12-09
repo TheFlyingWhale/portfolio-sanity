@@ -14,6 +14,7 @@ import imageCollection from "./pageSections/imageCollection";
 import imageElement from "./pageSections/imageElement";
 import textCollection from "./pageSections/textCollection";
 import textElement from "./pageSections/textElement";
+import imageDocument from "./imageDocument";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -23,11 +24,13 @@ export default createSchema({
 	// to the ones provided by any plugins that are installed
 	types: schemaTypes.concat([
 		/* Your types here! */
+		//documents
 		project,
-		//aboutSection
 		aboutSection,
-		eductionSection,
+		imageDocument,
+
 		//pageSections
+		eductionSection,
 		hero,
 		imageCollection,
 		imageElement,
